@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+#containsEverything{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    border:solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thick;
+}
+#screen{
+    display: flex;
+    flex: 1;
+    border-bottom: solid rgb(162, 170, 173);
+    border-radius: 5%;
+}
+#numpad{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+.row{
+    display: flex;
+    flex: 1;
+}
+#firstRow{
+    border-bottom: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+}
+#secondRow{
+    border-bottom: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+}
+#thirdRow{
+    border-bottom: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+}
+#fourthRow{
+    border-bottom: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+}
+#fifthRow{
+    border-bottom: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+}
+#zero{
+    display: flex;
+    flex: 2;
+    border-right: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+    justify-content: center;
+    align-items: center;
+}
+#nine{
+    display: flex;
+    border-right: solid rgb(162, 170, 173);
+    border-radius: 5%;
+    border-width: thin;
+    justify-content: center;
+    align-items: center;
+}
+.normal{
+    display:flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color:transparent;
+    border-color: transparent;
+}
