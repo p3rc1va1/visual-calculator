@@ -17,9 +17,21 @@ body{
 }
 #screen{
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items:flex-end;
     flex: 1;
     border-bottom: solid rgb(162, 170, 173);
-    border-radius: 5%;
+    border-width: thick;
+}
+#memory{
+    flex: 1;
+}
+#current{
+    flex: 3;
+    color: rgb(162, 170, 173);
+    font-size: xx-large;
+    margin-right: 5%;
 }
 #numpad{
     display: flex;
@@ -32,45 +44,74 @@ body{
 }
 #firstRow{
     border-bottom: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
 }
 #secondRow{
     border-bottom: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
 }
 #thirdRow{
     border-bottom: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
 }
 #fourthRow{
     border-bottom: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
 }
 #fifthRow{
     border-bottom: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
 }
 #zero{
     display: flex;
     flex: 2;
     border-right: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
     justify-content: center;
     align-items: center;
 }
+#seven{
+    border-right: solid rgb(162, 170, 173);
+    border-width: thin;
+}
+#eight{
+    border-right: solid rgb(162, 170, 173);
+    border-width: thin;
+}
 #nine{
     display: flex;
     border-right: solid rgb(162, 170, 173);
-    border-radius: 5%;
     border-width: thin;
     justify-content: center;
     align-items: center;
+}
+
+#four{
+    border-right: solid rgb(162, 170, 173);
+    border-width: thin;
+}
+#six{
+    border-right: solid rgb(162, 170, 173);
+    border-left: solid rgb(162, 170, 173);
+    border-width: thin;
+}
+#one{
+    border-right: solid rgb(162, 170, 173);
+    border-width: thin;
+}
+#three{
+    border-right: solid rgb(162, 170, 173);
+    border-left: solid rgb(162, 170, 173);
+    border-width: thin;
+}
+#ereaseOne{
+    border-right: solid rgb(162, 170, 173);
+    border-left: solid rgb(162, 170, 173);
+    border-width: thin;
+}
+#divide{
+    border-left: solid rgb(162, 170, 173);
+    border-width: thin;
 }
 .normal{
     display:flex;
@@ -78,8 +119,20 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+#dotB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a2aaad;
+    font-size: xx-large;
+}
+#dot{
+    border-right: solid rgb(162, 170, 173);
+    border-width: thin;
+}
 button{
     background-color:transparent;
     border-color: transparent;
+    flex: 1;
+    min-height:100%
 }

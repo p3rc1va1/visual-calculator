@@ -10,35 +10,85 @@
 <body>
     <div id="containsEverything">
         <div id="screen">
-
-        </div>
-        <div id="numpad">
-            <div id="firstRow" class="row">
+            <div id="memory">
 
             </div>
-            <div id="secondRow" class="row">
+            <div id="current">
+
+            </div>
+        </div>
+        <div id="numpad">
+            <div id="firstRow" style="background-color: rgb(59,59,59);" class="row">
+                <div id="erease" class="normal">
+                    <button><i class="fa-solid fa-eraser fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="ereaseOne" class="normal">
+                    <button><i class="fa-solid fa-delete-left fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="percent" class="normal">
+                    <button><i class="fa-solid fa-percent fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div style="background-color: #964c02;" id="divide" class="normal">
+                    <button><i class="fa-solid fa-divide fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+            </div>
+            <div id="secondRow" style="background-color: rgb(91,91,91);" class="row">
+                <div id="seven" class="normal">
+                    <button><i class="fa-solid fa-7 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="eight" class="normal">
+                    <button><i class="fa-solid fa-8 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
                 <div id="nine" class="normal">
                     <button><i class="fa-solid fa-9 fa-2xl" style="color: #a2aaad;"></i></button>
                 </div>
-            </div>
-            <div id="thirdRow" class="row">
+                <div style="background-color: #964c02;" id="multiply" class="normal">
+                    <button><i class="fa-solid fa-xmark fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
                 
+
             </div>
-            <div id="fourthRow" class="row">
-                
+            <div id="thirdRow" style="background-color: rgb(91,91,91);" class="row">
+                <div id="four" class="normal">
+                    <button><i class="fa-solid fa-4 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="five" class="normal">
+                    <button><i class="fa-solid fa-5 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="six" class="normal">
+                    <button><i class="fa-solid fa-6 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div style="background-color: #964c02;" id="minus" class="normal">
+                    <button><i class="fa-solid fa-minus fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
             </div>
-            <div id="fifthRow" class="row">
+            <div id="fourthRow" style="background-color: rgb(91,91,91);"class="row">
+                <div id="one" class="normal">
+                    <button><i class="fa-solid fa-1 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="two" class="normal">
+                    <button><i class="fa-solid fa-2 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div id="three" class="normal">
+                    <button><i class="fa-solid fa-3 fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+                <div style="background-color: #964c02;" id="plus" class="normal">
+                    <button><i class="fa-solid fa-plus fa-2xl" style="color: #a2aaad;"></i></button>
+                </div>
+            </div>
+            <div id="fifthRow" style="background-color: rgb(91,91,91);" class="row">
                 <div id="zero">
                     <button><i class="fa-solid fa-0 fa-2xl" style="color: #a2aaad;"></i></button>
                 </div>
                 <div id="dot" class="normal">
-                    <button>0</button>
+                    <button id="dotB">.</button>
                 </div>
-                <div id="equals" class="normal">
-                    <button>0</button>
+                <div style="background-color: #964c02;" id="equals" class="normal">
+                    <button><i class="fa-solid fa-equals fa-2xl" style="color: #a2aaad;"></i></button>
                 </div>
                 
             </div>
+            <script src="calculator.js"></script>
         </div>
     </div>
 </body>
