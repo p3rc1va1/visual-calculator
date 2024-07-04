@@ -9,7 +9,7 @@ body{
 #containsEverything{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 250px;
     height: 50%;
     border:solid rgb(162, 170, 173);
     border-radius: 5%;
@@ -23,9 +23,12 @@ body{
     flex: 1;
     border-bottom: solid rgb(162, 170, 173);
     border-width: thick;
+    font-family: 'Calculator', sans-serif;
 }
 #memory{
     flex: 1;
+    color: rgb(162, 170, 173);
+    margin-right: 5%;
 }
 #current{
     flex: 3;
@@ -72,15 +75,18 @@ body{
 }
 #seven{
     border-right: solid rgb(162, 170, 173);
+    border-top: solid rgb(162, 170, 173);
     border-width: thin;
 }
 #eight{
     border-right: solid rgb(162, 170, 173);
+    border-top: solid rgb(162, 170, 173);
     border-width: thin;
 }
 #nine{
     display: flex;
     border-right: solid rgb(162, 170, 173);
+    border-top: solid rgb(162, 170, 173);
     border-width: thin;
     justify-content: center;
     align-items: center;
@@ -104,7 +110,7 @@ body{
     border-left: solid rgb(162, 170, 173);
     border-width: thin;
 }
-#ereaseOne{
+#negate{
     border-right: solid rgb(162, 170, 173);
     border-left: solid rgb(162, 170, 173);
     border-width: thin;
@@ -129,6 +135,10 @@ body{
 #dot{
     border-right: solid rgb(162, 170, 173);
     border-width: thin;
+}
+#operator{
+    color: #a2aaad;
+    margin-right: 5%;
 }
 button{
     background-color:transparent;
