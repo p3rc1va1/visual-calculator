@@ -99,7 +99,11 @@ percent.addEventListener("click", ()=>{
 });
 
 dot.addEventListener("click", ()=>{
-    current.textContent = current.textContent + "."
+    if(current.textContent.includes(".")){
+        alert("That is not a number!")
+    }else{
+        current.textContent = current.textContent + "."
+    }
 });
 
 equals.addEventListener("click", ()=>{
