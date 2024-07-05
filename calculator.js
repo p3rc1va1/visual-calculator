@@ -17,8 +17,10 @@ const operator = document.getElementById("operator");
 const plus = document.getElementById("plus");
 const minus = document.getElementById("minus");
 const multiply = document.getElementById("multiply")
-
+const negate = document.getElementById("negate")
 const equals = document.getElementById("equals");
+const dot = document.getElementById("dot");
+const percent = document.getElementById("percent")
 
 zero.addEventListener("click", ()=>{
     current.textContent = current.textContent +0;
@@ -78,10 +80,27 @@ minus.addEventListener("click", ()=>{
 
 multiply.addEventListener("click", ()=>{
     memory.textContent = current.textContent;
-    operator.textContent = "-";
+    operator.textContent = "x";
     current.textContent = "";
 });
 
+divide.addEventListener("click", ()=>{
+    memory.textContent = current.textContent;
+    operator.textContent = "/";
+    current.textContent = "";
+});
+
+negate.addEventListener("click", ()=>{
+    current.textContent = Number(current.textContent) *-1
+});
+
+percent.addEventListener("click", ()=>{
+    current.textContent = Number(current.textContent) /100
+});
+
+dot.addEventListener("click", ()=>{
+    current.textContent = current.textContent + "."
+});
 
 equals.addEventListener("click", ()=>{
     if(operator.textContent == "+"){
@@ -90,6 +109,14 @@ equals.addEventListener("click", ()=>{
         memory.textContent = "";
     }else if(operator.textContent =="-"){
         current.textContent = Number(memory.textContent)-Number(current.textContent);
+        operator.textContent = "";
+        memory.textContent = "";
+    }else if(operator.textContent =="x"){
+        current.textContent = Number(memory.textContent)*Number(current.textContent);
+        operator.textContent = "";
+        memory.textContent = "";
+    }else if(operator.textContent =="/"){
+        current.textContent = Number(memory.textContent)/Number(current.textContent);
         operator.textContent = "";
         memory.textContent = "";
     }
